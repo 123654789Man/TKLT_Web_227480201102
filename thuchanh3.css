@@ -1,0 +1,51 @@
+.box1{
+    display: flex;
+    justify-content: space-between;
+}
+.box2{
+    display: flex;
+    justify-content: space-between;
+}
+.nd3{
+    margin-left: 70px;
+    margin-top: -15px;
+}
+.nd1{
+    margin-left: 70px;
+}
+.nd2{
+    margin-right: 150px;
+}
+.nd4{
+    margin-right: 210px;
+    margin-top: -15px;
+}
+h1, p{
+    text-align: center;
+}
+h1{
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nd5{
+    margin-top: -15px;
+}
+ol{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.hehe{
+    list-style: disc;
+}
+.hinh1{
+    width: 250px;
+    height: 150px;
+}
+.hinh2{
+    width: 250px;
+    height: 150px;
+}
+.hinh3{
+    width: 250px;
+    height: 150px;
+}
