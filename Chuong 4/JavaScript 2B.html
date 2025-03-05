@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("<h1> Tạo Button bằng Script </h1> <br>");
+        document.write("<br>");
+        function thongbao(){
+            document.getElementById("txtthongbao").value="Hello JavaScript";
+        }
+    </script>
+    <form>
+        <input type="button" value="Hello" name="Hello" onclick="thongbao()">
+        <input type="text" name="txtthongbao" id="txtthongbao">
+    </form>
+</body>
+</html>

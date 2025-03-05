@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trai {
+    text-align: left;
+    width: 50%;
+}
+
+.phai {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.phai h2 {
+    margin-bottom: 5px;
+}
+
+.phai h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="text"] input[type="password"] {
+    width: 30%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+select {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: darkgray;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký dự thi thể thao</title>
+    <link rel="stylesheet" href="ex05.css">
+</head>
+<body>
+    <div class="header">
+        <div class="trai">
+            <h2>TRƯỜNG ĐẠI HỌC BẠC LIÊU<br>KHOA KỸ THUẬT VÀ CÔNG NGHỆ</h2>
+        </div>
+        <div class="phai">
+            <h2>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h2>
+            <h3>Độc lập - Tự do - Hạnh phúc</h3>
+        </div>
+    </div>
+
+    <div class="title">
+        <h1>PHIẾU ĐĂNG KÝ DỰ THI THỂ THAO</h1>
+    </div>
+
+    <div class="form">
+        <form>
+            <label for="hoten">Họ tên:</label>
+            <input type="text" id="hoten" name="hoten"><br><br>
+
+            <label for="matkhau">Mật khẩu:</label>
+            <input type="text" id="matkhau" name="matkhau"><br><br>
+
+            <label>Môn thể thao:</label><br>
+            <input type="checkbox" id="bongda" name="mon" value="Bóng đá">
+            <label for="bongda">Bóng đá</label><br>
+            <input type="checkbox" id="bongchuyen" name="mon" value="Bóng chuyền">
+            <label for="bongchuyen">Bóng chuyền</label><br>
+            <input type="checkbox" id="dienkinh" name="mon" value="Điền kinh">
+            <label for="dienkinh">Điền kinh</label><br>
+            <input type="checkbox" id="boiloi" name="mon" value="Bơi lội">
+            <label for="boiloi">Bơi lội</label><br><br>
+
+            <hr>
+
+            <h2>PHẦN CỨNG MÁY TÍNH</h2>
+
+            <label for="thietbi">Thiết bị:</label><br>
+            <select id="thietbi" name="thietbi">
+                <option value="CPU">CPU</option>
+                <option value="Mainboard">Mainboard</option>
+                <option value="ASUS DVD">ASUS DVD</option>
+                <option value="RAM KingMax">RAM KingMax</option>
+            </select><br><br>
+
+            <label for="baohanh">Thời gian bảo hành:</label><br>
+            <select name="baohanh" id="baohanh">
+                <option value="3 tháng">3 tháng</option>
+                <option value="6 tháng">6 tháng</option>
+                <option value="9 tháng">9 tháng</option>
+                <option value="12 tháng">12 tháng</option>
+            </select><br><br>
+
+            <button type="submit" class="button">Submit</button>
+            <button type="reset" class="button">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

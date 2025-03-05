@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+    line-height: 1.5;
+    background-color: #FFFACD;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+}
+
+.section {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    font-family: Verdana, sans-serif;
+    color: green;
+}
+
+ol {
+    font-family: Verdana, sans-serif;
+    color: purple;
+}
+
+ul {
+    font-family: "Times New Roman", serif;
+    color: blue;
+}
