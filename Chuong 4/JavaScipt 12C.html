@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Hãy gõ văn bản vào trong hộp text và click vào nút hiển thị</h2>
+    Họ: <input type="text" name="Ho" id="Ho" value="Họ">  
+    Tên: <input type="text" name="Ten" id="Ten" value="Tên">
+    Họ và Tên: <input type="text" id="Hoten" name="Hoten" value="">
+    <input type="button" value="Hiển thị" onclick="alert(Ho.value + ' và ' + Ten.value);
+    document.getElementById('Hoten').value=Ho.value + ' và ' + Ten.value">
+</body>
+</html>

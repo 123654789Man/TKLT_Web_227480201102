@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var soluong, x;
+        var ds = new Array(100);
+        soluong = prompt("Bạn cần nhập bao nhiêu người ");
+        for( i=0; i<soluong; i++){
+            ds[i] = prompt("Nhập họ tên","");
+        }
+        document.write("<h2>Danh sách người sao khi nhập</h2>");
+        for (x in ds){
+            document.write(ds[x])
+            document.write("<br>")
+        }
+        document.write("<h2>Danh sách người sao khi sắp xếp</h2>");
+        ds.sort();
+        for(x in ds){
+            document.write(ds[x])
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>
