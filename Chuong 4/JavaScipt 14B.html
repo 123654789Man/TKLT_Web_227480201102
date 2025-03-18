@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Số hạng 1:<input type="text" name="SoHang1" id="SoHang1">
+    Số hạng 2:<input type="text" name="SoHang2" id="SoHang2">
+    <br>
+    <br>
+    <input type="radio" name="gender" id="Tong"> Tổng
+    <br>
+    <input type="radio" name="gender" id="Hieu"> Hiệu
+    <br>
+    <input type="radio" name="gender" id="Nhan"> Nhân
+    <br>
+    <input type="radio" name="gender" id="Thuong"> Thương
+    <br>
+    <br>
+    <input type="button" value="Tính" onclick="if(Tong.checked == true){KetQua.value = parseFloat(SoHang1.value) + parseFloat(SoHang2.value)}
+    if(Hieu.checked == true){KetQua.value = parseFloat(SoHang1.value) - parseFloat(SoHang2.value)}
+    if(Nhan.checked == true){KetQua.value = parseFloat(SoHang1.value) * parseFloat(SoHang2.value)}
+    if(Thuong.checked == true){KetQua.value = parseFloat(SoHang1.value) / parseFloat(SoHang2.value)}">
+    Kết quả:<input type="text" name="KetQua" id="KetQua">
+</body>
+</html>

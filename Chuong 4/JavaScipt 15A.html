@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Capnhat(){
+            document.title = TieuDe.value;
+            document.bgColor = MauNen.value;
+            document.fgColor = MauChu.value;
+            windot.defaultStatus = TrangThai.value
+        }
+    </script>
+</body>
+    <h2>Nhập vào các giá trị và nhấn nút thay đổi</h2>
+    <input type="text" name="TieuDe" id="TieuDe" value="Tiêu đề mới">
+    <br>
+    <input type="text" name="MauNen" id="MauNen"  value="Nhập màu vào đây (ví dụ blue)">
+    <br>
+    <input type="text" name="MauChu" id="MauChu"  value="Nhập màu chữ vào đây">
+    <br>
+    <input type="text" name="TrangThai" id="TrangThai" value="Nhập dòng trạng thái vào đây">
+    <br>
+    <input type="button" value="Thay đổi" onclick="Capnhat()">
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function DoiMau(Mau){
+            document.bgColor = Mau.value;
+        }
+    </script>
+    <input type="radio" name="gender" id="Mau1" value="yellow" onclick="if(Mau1.checked == true){DoiMau(Mau1)}"> Vàng
+    <br>
+    <input type="radio" name="gender" id="Mau2" value="green" onclick="if(Mau2.checked == true){DoiMau(Mau2)}"> xanh lá cây
+    <br>
+    <input type="radio" name="gender" id="Mau3" value="brown" onclick="if(Mau3.checked == true){DoiMau(Mau3)}"> Nâu
+    <br>
+    <input type="radio" name="gender" id="Mau4" value="magenta" onclick="if(Mau4.checked == true){DoiMau(Mau4)}"> tím hồng
+</body>
+</html>

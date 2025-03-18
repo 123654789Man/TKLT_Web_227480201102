@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Họ tên:<input type="text" name="" id="HoTen">
+    <br>
+    <br>
+    Năm vào làm: <input type="text" name="" id="NamVaoLam">
+    <br>
+    <br>
+    Hệ số: <input type="text" name="" id="HeSo">
+    <br>
+    <br>
+    Lương cơ sở: <input type="text" name="" id="LuongCoSo" onkeyup="LuongCoBan.value = parseFloat(HeSo.value) * parseFloat(LuongCoSo.value);
+     PhuCap.value = 0.25 * parseFloat(LuongCoBan.value); 
+     ThamNien.value = 2025 - parseInt(NamVaoLam.value);
+     ThanhTien.value = parseFloat(LuongCoBan.value) + parseFloat(PhuCap.value)">
+    <br>
+    <br>
+    Lương cơ bản: <input type="text" name="" id="LuongCoBan">
+    <br>
+    <br>
+    Phụ cấp: <input type="text" name="" id="PhuCap">
+    <br>
+    <br>
+    Thâm niên: <input type="text" name="" id="ThamNien">
+    <br>
+    <br>
+    Thành tiền: <input type="text" name="" id="ThanhTien">
+</body>
+</html>

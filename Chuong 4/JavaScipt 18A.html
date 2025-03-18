@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif;">
+     <script>
+        function Kiemtra(){
+            if(NoiDung.value.length > 200){
+                alert("Bạn đã nhập quá giới hạn ký tự là 200 ký tự")
+            }
+            SokyTu.value = NoiDung.value.length;
+        }
+     </script>
+        Số ký tự đã gõ: <input type="text" name="SokyTu" id="SokyTu">
+        <br>
+        <textarea name="NoiDung" id="NoiDung" cols="50" rows="10" onkeyup="Kiemtra()"></textarea>
+</body>
+</html>
