@@ -29,14 +29,18 @@
 <div class="container">
     <form method="post">
         <label for="num1">Số thứ 1:</label>
-        <input type="number" name="num1" required value="<?= isset($_POST['num1']) ? $_POST['num1'] : '' ?>"><br>
+        <input type="number" name="num1" required value="<?= isset($_POST['num1']) ? $_POST['num1'] : 0; ?>"><br>
 
         <label for="num2">Số thứ 2:</label>
-        <input type="number" name="num2" required value="<?= isset($_POST['num2']) ? $_POST['num2'] : '' ?>"><br>
+        <input type="number" name="num2" required value="<?= isset($_POST['num2']) ? $_POST['num2'] : 0; ?>"><br>
 
         <label for="result">Kết quả:</label>
-        <input type="text" name="result" readonly value="<?= isset($result) ? $result : '' ?>"><br>
-
+        <input type="number" name="result" value="<?php 
+        if($_SERVER["REQUEST_METHOD"] == "POST"){
+            echo tinhtoan();
+        }
+        ?>" readonly>
+        <br>
         <button type="submit" name="uscln">USCLN</button>
         <button type="submit" name="bscnn">BSCNN</button>
     </form>
@@ -55,16 +59,16 @@ function uscln($a, $b) {
 function bscnn($a, $b) {
     return ($a * $b) / uscln($a, $b);
 }
+function tinhtoan(){
+        $num1 = $_POST["num1"];
+        $num2 = $_POST["num2"];
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $num1 = intval($_POST["num1"]);
-    $num2 = intval($_POST["num2"]);
-
-    if (isset($_POST["uscln"])) {
-        $result = "USCLN: " . uscln($num1, $num2);
-    } elseif (isset($_POST["bscnn"])) {
-        $result = "BSCNN: " . bscnn($num1, $num2);
-    }
+        if (isset($_POST["uscln"])) {
+            $result = uscln($num1, $num2);
+        } elseif (isset($_POST["bscnn"])) {
+            $result = bscnn($num1, $num2);
+        }
+        return $result;
 }
 ?>
 </body>
