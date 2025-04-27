@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="22A.css">
 </head>
 <body>
-    <input type="text" name="" id="">
-    <input type="button" value="1">
-    <input type="button" value="2">
-    <input type="button" value="+">
-    <input type="button" value="=">
+    <script>
+        function TruyenCacThamSo(GiaTri){
+            document.getElementById('KetQua').value += " "+GiaTri;
+        }
+        function XoaCacThamSo(GiaTri){
+                if(GiaTri == "C"){
+                    document.getElementById('KetQua').value = ' '; 
+                }
+        }
+        function TinhToan(){
+            try{
+                document.getElementById('KetQua').value = eval(document.getElementById('KetQua').value)
+            }
+            catch{
+                alert("Lỗi cú pháp!")
+            }
+        }
+    </script>
+    <div class="content">
+        <div class="Maytinh">
+            <p><strong>Máy tính casio</strong></p>
+            <input type="text" name="" id="KetQua">
+            <br>
+            <br>
+            <input type="button" value="0" id="so0" onclick="TruyenCacThamSo(so0.value)">
+            <input type="button" value="1" id="so1" onclick="TruyenCacThamSo(so1.value)">
+            <input type="button" value="2" id="so2" onclick="TruyenCacThamSo(so2.value)">
+            <input type="button" value="3" id="so3" onclick="TruyenCacThamSo(so3.value)">
+            <input type="button" value="4" id="so4" onclick="TruyenCacThamSo(so4.value)">
+            <br>
+            <input type="button" value="5" id="so5" onclick="TruyenCacThamSo(so5.value)">
+            <input type="button" value="6" id="so6" onclick="TruyenCacThamSo(so6.value)">
+            <input type="button" value="7" id="so7" onclick="TruyenCacThamSo(so7.value)">
+            <input type="button" value="8" id="so8" onclick="TruyenCacThamSo(so8.value)">
+            <input type="button" value="9" id="so9" onclick="TruyenCacThamSo(so9.value)">
+            <br>
+            <input type="button" value="+" id="Cong" onclick="TruyenCacThamSo(Cong.value)">
+            <input type="button" value="-" id="Hieu" onclick="TruyenCacThamSo(Hieu.value)">
+            <input type="button" value="*" id="Nhan" onclick="TruyenCacThamSo(Nhan.value)">
+            <input type="button" value="/" id="Chia" onclick="TruyenCacThamSo(Chia.value)">
+            <input type="button" value="=" id="Bang" onclick="TinhToan()">
+            <br>
+            <input type="button" value="C" id="Xoa" onclick="XoaCacThamSo(Xoa.value)">
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,15 @@
+
+.content{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+.Maytinh{
+    background-color: antiquewhite;
+    width: 170px;
+    padding: 20px;
+    border: 2px solid red;
+}
+.content .Maytinh p{
+    color: darkmagenta;
+}

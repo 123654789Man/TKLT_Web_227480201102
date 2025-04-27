@@ -1,21 +1,55 @@
+
 <?php
+    $ketqua = "";
     session_start();
-    // <h1>Trang xử lý thông tin đăng nhập</h1>
-    $username = $_POST['username'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $password = $_POST['password'] ?? '';
-    
-    echo "<h1>TRANG XỬ LÝ THÔNG TIN ĐĂNG NHẬP";
-    echo "<hr>";
+    if(isset($_POST['dangnhap'])){
+        $_SESSION['email'] = $_POST['email'];
+        $_SESSION['password'] = $_POST['password'];
+        if($_SESSION['email'] ==  "linh@gmail.com" && $_SESSION['password'] == "123456"){
+            $ketqua = "Thong tin dang nhap hop le!";
 
-    if ($username === "linh123456" && $email === "linh123@gmail.com" && $password === "8426759130") {
-        $_SESSION['username'] = $username;
-        $_SESSION['email'] = $email;
-        echo "Thông tin đăng nhập hợp lệ<br>";
-        echo '<a href="mainpage.php">Trang chính</a>';
-    } else {
-        echo "Thông tin đăng nhập không hơp lệ<br>";
-        echo '<a href="login.html">Quay lại trang đăng nhập<a/>';
+        }
+        else{
+            $ketqua = "Thong tin dang nhap sai vui long nhap lai!";
+        }
     }
-
+    if (isset($_POST['trangchinh'])){
+        header("location: admin.php");
+        exit();
+    }
+    if (isset($_POST['login'])){
+        header("location: login.html");
+        exit();
+    }
 ?>
+<h2>Trang xu ly thong tin dang nhap</h2>
+<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method = "post">
+        <?php
+        if(isset($_SESSION['email'])){
+            if(isset($ketqua) && $ketqua != ""){
+
+                if($ketqua == "Thong tin dang nhap hop le!"){
+                    echo "<font color = 'green'>".$ketqua;
+                    echo "<br> <br>";
+                    echo "<input type='submit' value='Vao trang chinh' name='trangchinh'>";
+                }
+                else{
+                    echo "<font color = 'red'>".$ketqua;
+                    echo "<br> <br>";
+                    echo "<input type='submit' value='Quay ve dang nhap' name='login'>";
+                }
+            }
+            if(isset($ketqua) && $ketqua == "")
+                {
+                    echo "<font color = 'green'> Thong tin dang nhap hop le!";
+                    echo "<br> <br>";
+                    echo "<input type='submit' value='Vao trang chinh' name='trangchinh'>";
+                }
+            }
+        else{
+            echo "<font color = 'blue'>"."Bạn chưa nhập email or mật khẩu vui lòng hãy nhập!"."";
+            echo "<br> <br>";
+            echo "<input type='submit' value='Quay ve dang nhap' name='login'>";
+            }
+        ?>
+</form>
