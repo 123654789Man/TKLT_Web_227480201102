@@ -1,0 +1,84 @@
+.khung-chua {
+    display: grid;
+    grid-template-areas:
+      "thanh-ben tieu-de"
+      "thanh-ben noi-dung"
+      "chan-trang chan-trang";
+    grid-template-columns: 250px 1fr; /* Chiều rộng cố định cho thanh bên */
+    grid-template-rows: auto 1fr auto; /* Tiêu đề và chân trang tự động, nội dung chiếm phần còn lại */
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    min-height: 100vh; /* Đảm bảo khung chứa chiếm toàn bộ chiều cao màn hình */
+}
+
+.khung-chua > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+}
+
+.khung-chua > div.tieu-de {
+    grid-area: tieu-de;
+    text-align: center;
+}
+
+.khung-chua > div.thanh-ben {
+    grid-area: thanh-ben;
+    padding: 0; /* Loại bỏ padding để sidebar lấp đầy khu vực */
+    background-color: transparent; /* Đảm bảo màu nền do .thanh-ben quyết định */
+}
+
+.khung-chua > div.noi-dung {
+    grid-area: noi-dung;
+}
+
+.khung-chua > div.chan-trang {
+    grid-area: chan-trang;
+}
+
+.thanh-ben {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của khu vực grid */
+    height: 100%; /* Chiếm toàn bộ chiều cao của khu vực grid */
+    background-color: #2c3e50;
+    color: white;
+    padding-top: 20px;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước */
+}
+
+.thanh-ben a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.thanh-ben a:hover {
+    background-color: #34495e;
+}
+
+.danh-muc-tha-xuong {
+    position: relative;
+}
+
+.noi-dung-tha-xuong {
+    display: none;
+    background-color: #34495e;
+    padding-left: 20px;
+}
+
+.noi-dung-tha-xuong a {
+    padding: 8px 20px;
+}
+
+.danh-muc-tha-xuong:hover .noi-dung-tha-xuong {
+    display: block;
+}
+
+.nut-tha-xuong {
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.noi-dung-tha-xuong a:hover {
+    background-color: brown;
+}
