@@ -1,1 +1,2 @@
-Link trang web bài tập các chương và giới thiệu bản thân của tôi     http://nguyenhoanglinh.wuaze.com/
+- Link trang web bài tập các chương và giới thiệu bản thân của tôi:     http://nguyenhoanglinh.wuaze.com/
+- Link trang web bài tập 2 chương 7 - Quản lý nhân sự:   http://nguyenhoanglinh1.free.nf/
