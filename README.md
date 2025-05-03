@@ -1,1 +1,1 @@
-link trang web giới thiệu bản thân và bài tập các chương của tôi http://nguyenhoanglinh.wuaze.com/
+Link trang web bài tập các chương và giới thiệu bản thân của tôi     http://nguyenhoanglinh.wuaze.com/
